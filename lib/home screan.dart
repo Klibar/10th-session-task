@@ -1,3 +1,5 @@
 import 'package:flutter/material.dart';
 
-class homeScrean {}
+class homeScrean extends StatelessWidget{
+  homeScrean({super.key})
+}
