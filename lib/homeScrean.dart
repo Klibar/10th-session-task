@@ -6,7 +6,18 @@ class HomeScrean extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(leading: Icon(Icons.menu), title: Text('Porfile')),
+      appBar: AppBar(
+        leading: Icon(Icons.arrow_back),
+        title: Text('Portfolio'),
+        centerTitle: true,
+        actions: [
+          Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 25),
+            child: Icon(Icons.menu),
+          ),
+        ],
+      ),
+      body: Column(children: [Container()]),
     );
   }
 }
