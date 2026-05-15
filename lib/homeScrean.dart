@@ -17,7 +17,7 @@ class HomeScreen extends StatelessWidget {
         centerTitle: true,
         actions: [
           Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 25),
+            padding: EdgeInsets.symmetric(horizontal: 25),
             child: Icon(Icons.menu, color: Colors.white),
           ),
         ],
@@ -33,6 +33,7 @@ class HomeScreen extends StatelessWidget {
           ),
         ),
         child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Container(
               decoration: BoxDecoration(
@@ -53,18 +54,40 @@ class HomeScreen extends StatelessWidget {
             ),
             Text(
               'Mohamed Ashraf',
-              style: GoogleFonts.alfaSlabOne(
+              style: GoogleFonts.exo2(
                 color: Colors.white,
                 fontSize: 30,
                 fontWeight: FontWeight.bold,
               ),
-              // style: TextStyle(
-              //   color: Colors.white,
-              //   fontSize: 30,
-              //   fontWeight: FontWeight.bold,
-              // ),
             ),
-            Text('Flutter Developer'),
+            Text(
+              'Flutter Developer',
+              style: GoogleFonts.openSans(color: Colors.white, fontSize: 15),
+            ),
+            Divider(
+              color: Colors.black,
+              thickness: 3,
+              indent: 130,
+              endIndent: 130,
+              height: 40,
+            ),
+            Padding(
+              padding: EdgeInsets.symmetric(horizontal: 15),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Icon(Icons.phone, size: 30, color: Colors.white),
+                  Text(
+                    '01007593265',
+                    style: TextStyle(
+                      fontSize: 20,
+                      color: Colors.white,
+                      fontWeight: FontWeight.w500,
+                    ),
+                  ),
+                ],
+              ),
+            ),
           ],
         ),
       ),
