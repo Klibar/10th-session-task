@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'home screan.dart';
+import 'homeScrean.dart';
 
 void main() {
-  runApp(MaterialApp(debugShowCheckedModeBanner: false, home: homeScrean()));
+  runApp(MaterialApp(debugShowCheckedModeBanner: false, home: HomeScrean()));
 }
