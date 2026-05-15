@@ -73,19 +73,76 @@ class HomeScreen extends StatelessWidget {
             ),
             Padding(
               padding: EdgeInsets.symmetric(horizontal: 15),
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
-                  Icon(Icons.phone, size: 30, color: Colors.white),
-                  Text(
-                    '01007593265',
-                    style: TextStyle(
-                      fontSize: 20,
-                      color: Colors.white,
-                      fontWeight: FontWeight.w500,
+              child: Container(
+                width: double.infinity,
+                height: 60,
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(15),
+
+                  color: Colors.white.withOpacity(0.8),
+                  border: Border.all(color: Colors.lightBlue, width: 1),
+                  boxShadow: [
+                    BoxShadow(
+                      color: Colors.lightBlue.withOpacity(0.5),
+                      blurRadius: 3,
+                      spreadRadius: 1.5,
                     ),
+                  ],
+                ),
+                child: Padding(
+                  padding: EdgeInsets.symmetric(horizontal: 10),
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      Icon(Icons.phone, size: 30, color: Color(0xff6f42f7)),
+                      Text(
+                        '01007593265',
+                        style: TextStyle(
+                          fontSize: 20,
+                          color: Color(0xff6f42f7),
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                    ],
                   ),
-                ],
+                ),
+              ),
+            ),
+            SizedBox(height: 20),
+            Padding(
+              padding: EdgeInsets.symmetric(horizontal: 15),
+              child: Container(
+                width: double.infinity,
+                height: 60,
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(15),
+                  color: Colors.white.withOpacity(0.8),
+                  border: Border.all(color: Colors.lightBlue, width: 1),
+                  boxShadow: [
+                    BoxShadow(
+                      color: Colors.lightBlue.withOpacity(0.5),
+                      blurRadius: 3,
+                      spreadRadius: 1.5,
+                    ),
+                  ],
+                ),
+                child: Padding(
+                  padding: EdgeInsets.symmetric(horizontal: 10),
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      Icon(Icons.mail, size: 30, color: Color(0xff6f42f7)),
+                      Text(
+                        'Klibar@EraaSoft.net',
+                        style: TextStyle(
+                          fontSize: 20,
+                          color: Color(0xff6f42f7),
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
               ),
             ),
           ],
