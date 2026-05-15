@@ -78,7 +78,6 @@ class HomeScreen extends StatelessWidget {
                 height: 60,
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(15),
-
                   color: Colors.white.withOpacity(0.8),
                   border: Border.all(color: Colors.lightBlue, width: 1),
                   boxShadow: [
@@ -92,9 +91,9 @@ class HomeScreen extends StatelessWidget {
                 child: Padding(
                   padding: EdgeInsets.symmetric(horizontal: 10),
                   child: Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       Icon(Icons.phone, size: 30, color: Color(0xff6f42f7)),
+                      SizedBox(width: 20),
                       Text(
                         '01007593265',
                         style: TextStyle(
@@ -129,9 +128,9 @@ class HomeScreen extends StatelessWidget {
                 child: Padding(
                   padding: EdgeInsets.symmetric(horizontal: 10),
                   child: Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       Icon(Icons.mail, size: 30, color: Color(0xff6f42f7)),
+                      SizedBox(width: 20),
                       Text(
                         'Klibar@EraaSoft.net',
                         style: TextStyle(
